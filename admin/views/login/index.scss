@@ -1,0 +1,16 @@
+html,body{
+    height: 100%;
+}
+body{
+    background-color: gray;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    .logContainer{
+        background-color: rgba($color: #000000, $alpha: 0.7);
+        width: 600px;
+        height: 400px;
+        padding: 50px;
+    }
+}

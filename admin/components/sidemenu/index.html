@@ -1,0 +1,58 @@
+<ul class="nav flex-column" style="margin-top: 10px;">
+  <li class="nav-item">
+    <a class="nav-link active" aria-current="page" href="/完整项目/admin/views/home/index.html" id="sidemenu-home">首页</a>
+  </li>
+  <li class="nav-item">
+    <div class="accordion" id="accordionExample">
+      <div class="accordion-item user-manage-item">
+        <h2 class="accordion-header" id="headingOne">
+          <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#user-manage" aria-expanded="true" aria-controls="collapseOne">
+            用户管理
+          </button>
+        </h2>
+        <div id="user-manage" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+          <div class="accordion-body">
+            <a class="nav-link active nav-font" aria-current="page" href="/完整项目/admin/views/usermanage/adduser/index.html" id="sidemenu-adduser">添加用户</a>
+            <a class="nav-link active nav-font" aria-current="page" href="/完整项目/admin/views/usermanage/userlist/index.html" id="sidemenu-userlist">用户列表</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="accordion" id="accordionExample">
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingOne">
+          <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#news-manage" aria-expanded="true" aria-controls="collapseOne">
+            新闻管理
+          </button>
+        </h2>
+        <div id="news-manage" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+          <div class="accordion-body">
+            <a class="nav-link active nav-font" aria-current="page" href="/完整项目/admin/views/newsmanage/createnews/index.html" id="sidemenu-cnews">添加新闻</a>
+            <a class="nav-link active nav-font" aria-current="page" href="/完整项目/admin/views/newsmanage/newslist/index.html" id="sidemenu-newslist">新闻列表</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </li>
+</ul>
+
+<style>
+.accordion-button:not(.collapsed) {
+  color: black;
+  background-color: white;
+  box-shadow: none;
+}
+.accordion-item{
+border: 0;
+}
+.nav-font{
+color: black;
+}
+.accordion-button:focus{
+box-shadow: none;
+}
+.text-center{
+text-align: left !important;
+}
+
+</style>

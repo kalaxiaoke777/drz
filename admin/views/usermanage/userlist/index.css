@@ -1,0 +1,41 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+ul, ol {
+  list-style: none;
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+header {
+  background-color: yellow;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  z-index: 100;
+}
+
+section {
+  flex: 1;
+  margin-top: 50px;
+}
+
+section .main {
+  padding: 20px;
+}
+
+section .main .mainContent {
+  margin-top: 10px;
+  padding: 20px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+}

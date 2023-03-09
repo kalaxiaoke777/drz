@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="/完整项目/admin/lib/css/bootstrap.css">
+  <script src="/完整项目/admin/lib/js/bootstrap.bundle.js"></script>
+  <link rel="stylesheet" href="index.css">
+  <link href="https://unpkg.com/@wangeditor/editor@latest/dist/css/style.css" rel="stylesheet">
+  <style>
+    #editor—wrapper {
+      border: 1px solid #ccc;
+      z-index: 100; /* 按需定义 */
+    }
+    #toolbar-container { border-bottom: 1px solid #ccc; }
+    #editor-container { height: 500px; }
+  </style>
+  <script src="https://unpkg.com/@wangeditor/editor@latest/dist/index.js"></script>
+</head>
+
+<body>
+  <header></header>
+  <section>
+    <div class="container-fluid text-center">
+      <div class="row">
+        <div class="col-2 sidemenu">
+        </div>
+        <div class="col-10 main">
+          <div class="mainContent">
+            <nav aria-label="breadcrumb">
+              <ol class="breadcrumb">
+                <li class="breadcrumb-item " aria-current="page">新闻管理</li>
+                <li class="breadcrumb-item active" aria-current="page">编辑新闻</li>
+              </ol>
+            </nav>
+            <form action="" id="editnewsform">
+              <div class="mb-3">
+                  <label for="title" class="form-label">标题</label>
+                  <input type="text" class="form-control" id="title" aria-describedby="emailHelp" required>
+              </div>
+              <div class="mb-3">
+                  <label for="content" class="form-label" id="content">内容</label>
+                  <div id="content" style="border: 1px solid #ced4da;">
+                    <div id="toolbar-container"><!-- 工具栏 --></div>
+                    <div id="editor-container"><!-- 编辑器 --></div>
+                </div>
+              </div>
+              <div class="mb-3">
+                  <label for="category" class="form-label">类别
+                  </label><select class="form-select" aria-label="Default select example" id="category">
+                    <option value="0">最新动态</option>
+                    <option value="1">典型案例</option>
+                    <option value="2">通知公告</option>
+                  </select>
+              <div class="mb-3">
+                  <label for="titleimg" class="form-label">封面图片</label>
+                  <input type="file" class="form-control" id="titleimg">
+              </div>
+              <button type="submit" class="btn btn-primary userbtn">发布新闻</button>
+      </div>
+      </form>
+          </div>
+      </div>
+    </div>
+  </section>
+  <script src="index.js" type="module">
+  </script>
+</body>
+
+</html>

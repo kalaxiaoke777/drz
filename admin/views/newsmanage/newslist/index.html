@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="/完整项目/admin/lib/css/bootstrap.css">
+  <script src="/完整项目/admin/lib/js/bootstrap.bundle.js"></script>
+  <link rel="stylesheet" href="index.css">
+ 
+</head>
+
+<body>
+  <header></header>
+  <section>
+    <div class="container-fluid text-center">
+      <div class="row">
+        <div class="col-2 sidemenu">
+          首页
+        </div>
+        <div class="col-10 main">
+          <div class="mainContent">
+            <nav aria-label="breadcrumb">
+              <ol class="breadcrumb">
+                <li class="breadcrumb-item " aria-current="page">新闻管理</li>
+                <li class="breadcrumb-item active" aria-current="page">新闻列表</li>
+              </ol>
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th scope="col">标题</th>
+                    <th scope="col">分类</th>
+                    <th scope="col">操作</th>
+                  </tr>
+                </thead>
+                <tbody id="tbodyList">
+
+                </tbody>
+              </table>
+          </div>
+        </div>
+
+      </div>
+  </section>
+  <div class="modal fade" id="previewModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-xl">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="previewModalTitle">新闻预览</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <form action="" id="previewModalContent">
+          
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- 删除 -->
+  <div class="modal fade" id="delModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">提示信息</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <form action="" id="editform">
+          你确定要删除吗
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">取消</button>
+          <button type="button" class="btn btn-primary" id="delConfirm">确定</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="index.js" type="module">
+  </script>
+</body>
+
+</html>

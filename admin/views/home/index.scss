@@ -1,0 +1,14 @@
+@import "..\\style.scss";
+
+    .mains>div{
+        display: flex;
+        >div{
+            margin-left: 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+    }
+ 
+
+  
